@@ -18,7 +18,7 @@ sudo apt update
 # 装依赖
 sudo apt install -y zlib1g-dev libbz2-dev libssl-dev libncurses5-dev libsqlite3-dev libreadline-dev tk-dev libgdbm-dev libdb-dev libpcap-dev xz-utils libexpat1-dev liblzma-dev libffi-dev libc6-dev
 # 下载源码
-wget https://cdn.npm.taobao.org/dist/python/3.9.9/Python-3.9.9.tgz
+wget https://registry.npmmirror.com/-/binary/python/3.9.9/Python-3.9.9.tgz
 # 解压
 tar -xzf Python-3.9.9.tgz
 # 放在/usr/local/share/下

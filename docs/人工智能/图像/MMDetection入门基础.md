@@ -98,50 +98,6 @@ pip install torch==1.7.0+cu101 torchvision==0.8.1+cu101 torchaudio==0.7.0 -f htt
 pip install mmcv-full==1.3.3 -f https://download.openmmlab.com/mmcv/dist/cu101/torch1.7.0/index.html -i http://pypi.douban.com/simple --trusted-host pypi.douban.com
 ```
 
-### 4、安装显卡驱动
-
-显卡为 `GTX1660`，驱动版本为 430，驱动下载地址：https://www.nvidia.cn/Download/Find.aspx?lang=cn
-
-```shell
-CTRL+ALT+F2 进入tty
-```
-
-禁用 nouveau 驱动
-
-```shell
-sudo vim /etc/modprobe.d/blacklist-nouveau.conf
-```
-
-填入：
-
-```shell
-blacklist nouveau 
-options nouveau modeset=0
-```
-
-刷新配置文件
-
-```shell
-sudo update-initramfs -u 
-```
-
-reboot 重启后再进入 tty
-
-关闭图像界面，输入命令关闭图像界面
-
-```shell
-sudo service lightdm stop
-```
-
-安装驱动
-
-```shell
-sudo chmod a+x NVIDIA-Linux-x86_64-430.run
-sudo ./NVIDIA-Linux-x86_64-430.run
-```
-
-reboot重启，nvidia-smi查看安装状态。注意看下cuda版本，10.1，driver版。
-
 ## 三、数据标注
 
 标注之前需要先转换图片大小，并且以数字命名，每组命名递增

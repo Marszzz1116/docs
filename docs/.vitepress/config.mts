@@ -35,7 +35,11 @@ export default withMermaid(
         { text: '网络爬虫', link: '/网络爬虫/接口请求工具/Requests' },
         { text: '前后端', link: '/前后端/前端/Linux上安装Nodejs' },
         { text: '人工智能', link: '/人工智能/图像/MMDetection入门基础' },
-        { text: '编程语言', link: '/编程语言/Python/Linux上如何选择用pip3还是sudopip3' },
+        { text: '编程语言', items:[
+                {text:'Python', link: '/编程语言/Python/Linux上如何选择用pip3还是sudopip3'},
+                {text:'Linux', link: '/编程语言/Linux/index.md'},
+            ]
+        },
         { text: 'Linux', link: '/Linux/方案教程/Linux基础' },
         { text: '技术文档', link: '/技术文档/专利交底书/一种定位目标图片坐标的图像识别技术交底书' },
         { text: '规范文档', link: '/规范文档/流程规范/测试单驱动自动化' },
@@ -45,7 +49,8 @@ export default withMermaid(
             { text: '💬 留言', link: '/comments' },
             { text: '📝 投稿', link: '/投稿' },
             { text: '💯 关于', link: '/about' },
-        ] },
+            ]
+        },
       ],
       search: {
         provider: 'local'

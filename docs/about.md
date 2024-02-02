@@ -18,6 +18,12 @@ outline: false
 
 ## 更新记录
 
+::: timeline 2024-02-01
+
+- 新增，技术文档/技术调研-[《Python最强静态代码检查&格式化工具Ruff》](/编程语言/Python/Python最强静态代码检查&格式化工具Ruff.md)
+
+:::
+
 ::: timeline 2024-01-23
 
 - 修改，技术文档/技术调研-[《Avocado和YouQu对比》调研报告](/技术文档/技术调研/《Avocado和YouQu对比》调研报告.md)

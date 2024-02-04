@@ -16,12 +16,12 @@ Ruff 是基于 Rust 编写的 Python 代码检查&格式化工具，就一个特
 
 过去 Python 的项目通常使用 Pylint 进行代码检查，然后使用 Black 进行代码格式化。
 
-现在有了 Ruff 这个一个工具就够了。
+正所谓人生苦短，现在有了 Ruff 这一个工具就够了。
 
 ## 安装
 
 ```shell
-pip install ruff -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip install ruff
 ```
 
 ## 代码检查
@@ -158,6 +158,6 @@ docstring-code-line-length = "dynamic"
 ignore = ["F401"]
 ```
 
-在此扫描就不会再报之前的问题。
+再次扫描就不会再报之前的问题。
 
 其他的一些配置也可以根据自己的一些需要进行配置。

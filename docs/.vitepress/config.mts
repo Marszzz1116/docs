@@ -37,7 +37,7 @@ export default withMermaid(
         { text: '人工智能', link: '/人工智能/图像/MMDetection入门基础' },
         { text: '编程语言', items:[
                 {text:'Python', link: '/编程语言/Python/Linux上如何选择用pip3还是sudopip3'},
-                {text:'Linux', link: '/编程语言/Linux/index.md'},
+                {text:'Shell', link: '/编程语言/Shell/index.md'},
             ]
         },
         { text: 'Linux', link: '/Linux/方案教程/Linux基础' },

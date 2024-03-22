@@ -1,5 +1,7 @@
 # NVIDIA驱动&CUDA&cuDNN安装
 
+系统环境：Deepin 20.9
+
 ## 驱动安装
 
 以显卡 `GTX3060` 举例，驱动下载地址：https://www.nvidia.cn/Download/Find.aspx?lang=cn
@@ -54,7 +56,7 @@ sudo ./NVIDIA-Linux-x86_64-430.run
 
 ## CUDA安装
 
-CUDA 是 NVIDIA 的并行计算框架
+CUDA 是 NVIDIA 的并行计算框架。
 
 `CUDA` 下载：https://developer.nvidia.com/cuda-toolkit-archive
 
@@ -70,6 +72,10 @@ sudo sh cuda_12.2.0_535.54.03_linux.run
 ```
 
 输入 `nvcc -V` 查看，如果正常就说明安装好了：
+
+![](/nvidia_assets/3.png)
+
+安装组件中千万别选 NVIDIA-fs，否则会 fail， 打叉表示选中。
 
 ## cuDNN
 

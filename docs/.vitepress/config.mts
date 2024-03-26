@@ -31,7 +31,14 @@ export default withMermaid(
     themeConfig: {
       // https://vitepress.dev/reference/default-theme-config
       nav: [
-        { text: '自动化技术', link: '/自动化技术/自动化测试框架/Pytest从入门到起飞' },
+        { text: '自动化技术', items:[
+                {text: 'UI自动化', link: '/自动化技术/UI自动化/Playwright—8小时入门版'},
+                {text: '性能自动化', link: '/自动化技术/性能自动化/Locust—2小时入门版'},
+                {text: '接口自动化', link: '/自动化技术/接口自动化/HttpRunner-2小时入门版'},
+                {text: '自动化思想', link: '/自动化技术/自动化思想/PageObjects'},
+                {text: '自动化测试框架', link: '/自动化技术/自动化测试框架/Pytest从入门到起飞'},
+            ]
+        },
         { text: '网络爬虫', link: '/网络爬虫/接口请求工具/Requests' },
         { text: '前后端', link: '/前后端/前端/Linux上安装Nodejs' },
         { text: '人工智能', link: '/人工智能/图像/MMDetection入门基础' },
@@ -41,8 +48,18 @@ export default withMermaid(
             ]
         },
         { text: 'Linux', link: '/Linux/方案教程/Linux基础' },
-        { text: '技术文档', link: '/技术文档/专利交底书/一种定位目标图片坐标的图像识别技术交底书' },
-        { text: '规范文档', link: '/规范文档/流程规范/测试单驱动自动化' },
+        { text: '技术文档', items:[
+                {text: '专利交底书', link: '/技术文档/专利交底书/一种定位目标图片坐标的图像识别技术交底书' },
+                {text: '技术调研', link: '/技术文档/技术调研/《可用于UOS桌面应用性能自动化工具》调研报告' },
+                {text: '根因分析', link: '/技术文档/根因分析/Python调用动态库运行时报静态TLS块不能分配内存根因分析报告' },
+            ]
+        },
+        { text: '规范策略', items:[
+                {text: '流程规范', link: '/规范策略/流程规范/测试单驱动自动化'},
+                {text: '测试方案', link: '/规范策略/测试方案/服务器CVE测试方法'},
+                {text: '测试策略', link: '/规范策略/测试策略/商业定制回合测试策略'},
+            ]
+        },
         { text: '读书笔记', link: '/读书笔记/OpenStack系统架构设计实战' },
         { text: '常见问题', link: '/常见问题/Wayland下sniff报错' },
         { text: '🍀 更多', items:[

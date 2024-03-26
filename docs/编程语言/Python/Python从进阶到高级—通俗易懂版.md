@@ -700,15 +700,15 @@ add(5, 10)
 from functools import wraps
 
 def logger(say_some):
-    @wraps
-    def wrapper(func):
-        def deco(*args, **kw):
+    def deco(func):
+        @wraps(func)
+        def wrapper(*args, **kw):
             print("搞之前我先说两句：{}".format(say_some))
             print('我要开始搞 {} 函数了:'.format(func.__name__))
             func(*args, **kw)  # 函数执行
             print('搞完了')
-        return deco
-    return wrapper
+        return wrapper
+    return deco
 ```
 
 你看，都是外层函数返回内层函数对象，参数放在最外层。`@wraps` 可加可不加，它的用途主要是保留被装饰函数的一些属性值。
